@@ -21,14 +21,15 @@
     </div>
     <div id="main" class="col-md-12" style="background-color:red;">
 
-        <table  style='width:100%'>
+        <script src="https://www.kryogenix.org/code/browser/sorttable/sorttable.js"></script>
+        <table class="sortable" style='width:100%'>
                 <tr>
-                    <th class='col-md-1'>Id</th>
-                    <th class='col-md-3'>Name</th>
-                    <th class='col-md-1'>Section</th>
-                    <th class='col-md-1'>Box</th>
-                    <th class='col-md-4'>Note</th>
-                    <th class='col-md-1'></th>
+                    <th style="-webkit-user-select: none;  -moz-user-select: none; -ms-user-select: none; user-select: none;" class='col-md-1'>Id</th>
+                    <th style="-webkit-user-select: none;  -moz-user-select: none; -ms-user-select: none; user-select: none;" class='col-md-3'>Name</th>
+                    <th style="-webkit-user-select: none;  -moz-user-select: none; -ms-user-select: none; user-select: none;" class='col-md-1'>Section</th>
+                    <th style="-webkit-user-select: none;  -moz-user-select: none; -ms-user-select: none; user-select: none;" class='col-md-1'>Box</th>
+                    <th style="-webkit-user-select: none;  -moz-user-select: none; -ms-user-select: none; user-select: none;" class='col-md-4'>Note</th>
+                    <th style="-webkit-user-select: none;  -moz-user-select: none; -ms-user-select: none; user-select: none;" class='col-md-1'></th>
                 </tr>
         <?php
             include 'includes/db.inc.php';
