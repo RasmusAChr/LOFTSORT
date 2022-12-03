@@ -2,29 +2,43 @@
     include_once 'header.php';
 ?>
 
-    <div id="title">
-        <h1>Items</h1>
-    </div>
-    <div id="upper" class="col-md-12" style="background-color:yellow;">
-    
-    <div>
-        <form action="includes/searchitems.inc.php" method="post">
-            <input id="name" type="text" name="name" placeholder="name...">
-            <input id="section" type="text" name="section" placeholder="section...">
-            <input id="box" type="text" name="box" placeholder="box...">
-            <input type='submit' name='submit' value='Udsøg'>
-        </form>
-    </div>
+    <div id="upper" class="container">
+        <div class="row" style="margin:0;padding:0;">
+            <div class="col-md-9" style="padding:0;">
+                <h1 id="title">Items</h1>
 
-    <a href="boxes.php"><button>Boxes</button></a>
-    <a href="additem.php"><button>Add item</button></a>
+                <form id="searchItemForm" action="includes/searchitems.inc.php" method="post">
+                    <input id="name" type="text" name="name" placeholder="name...">
+                    <input id="section" type="number" name="section" placeholder="section...">
+                    <input id="box" type="text" name="box" placeholder="box...">
+                    <input type='submit' id="submit" name='submit' value='Udsøg'>
+                </form>
+
+            </div>
+            <div id="upperButtons" class="col-md-3">
+                <div class="row">
+                    <?php
+                    if(isset($_SESSION['username'])){
+                        echo"<a id='btnMenu' href='includes/logout.inc.php'><button><img src='icons/logout.svg'></button></a>";
+                    }
+                    ?>
+                    <a id="btnMenu"></a>
+                    <a id="btnMenu" href="boxes.php"><button><img src="icons/box.svg"></button></a>
+                    <a id="btnMenu" href="additem.php"><button><img src="icons/addItem.svg"></button></a>
+                </div>
+                
+            </div>
+        </div>
+        
+        
+
+        
     </div>
-    <div id="main" class="col-md-12" style="background-color:red;">
+    <div id="main" class="col-md-12">
 
         <script src="https://www.kryogenix.org/code/browser/sorttable/sorttable.js"></script>
         <table class="sortable" style='width:100%'>
                 <tr>
-                    <th style="-webkit-user-select: none;  -moz-user-select: none; -ms-user-select: none; user-select: none;" class='col-md-1'>Id</th>
                     <th style="-webkit-user-select: none;  -moz-user-select: none; -ms-user-select: none; user-select: none;" class='col-md-3'>Name</th>
                     <th style="-webkit-user-select: none;  -moz-user-select: none; -ms-user-select: none; user-select: none;" class='col-md-1'>Section</th>
                     <th style="-webkit-user-select: none;  -moz-user-select: none; -ms-user-select: none; user-select: none;" class='col-md-1'>Box</th>
@@ -51,12 +65,11 @@
                     $deleteurl = "includes/deleteitem.inc.php?id=".$row["id"]."";
                     echo "
                     <tr>
-                        <td>".$row["id"]."</td>
                         <td>".$row["name"]."</td>
                         <td>".$row["section"]."</td>
                         <td>".$row["boxname"]."</td>
                         <td>".$row["note"]."</td>
-                        <td><a href='$editurl'><button>E</button></a> <a href='$deleteurl'><button>S</button></a></td>
+                        <td><div class='row' id='deleteeditrow'><a href='$editurl'><button><img src='icons/edit.svg'></button></a> <a href='$deleteurl'><button><img src='icons/delete.svg'></button></a></div></td>
                     </tr>";
                 }
             }

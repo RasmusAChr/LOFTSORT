@@ -1,0 +1,109 @@
+* {
+    border: 1px solid red;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#wrapper {
+    height: fit-content;
+    margin-top: 100px;
+    padding: 20px;
+    width: 700px;
+}
+
+#upper {
+    background-color: lightgrey;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#upperButtons {
+    text-align: right;
+}
+
+#upperButtons button {
+    width: auto;
+    border-radius: 10px;
+}
+
+#searchItemForm {
+    margin-top: 10px;
+    text-align: center;
+}
+
+#searchItemForm #section {
+    width: 90px;
+}
+
+#searchItemForm #submit {
+    margin-top: 5px;
+}
+
+#main {
+    padding: 10px;
+    background-color: lightgrey;
+    border-radius: 10px;
+}
+
+#title {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 2px;
+}
+
+button {
+    border: 1;
+}
+
+#btnMenu {
+    width: 50%;
+}
+
+#btnMenu button {
+    width: 100%;
+}
+
+#btnMenu img {
+    width: 100%;
+    object-fit: contain;
+
+}
+
+#deleteeditrow {
+    margin: 0;
+    padding: 0;
+}
+
+#deleteeditrow a {
+    width: 50%;
+}
+
+td button {
+    width: 100%;
+    padding: 2px;
+    border-radius: 6px;
+}
+
+td img {
+    width: 100%;
+    object-fit: contain;
+
+}
