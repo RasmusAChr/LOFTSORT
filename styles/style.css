@@ -1,5 +1,5 @@
 * {
-    border: 1px solid red;
+    /*border: 1px solid red;*/
 }
 
 body {
@@ -7,6 +7,7 @@ body {
     justify-content: center;
     height: 100vh;
     margin: 0;
+    background-color: #212121 !important;
 }
 
 #wrapper {
@@ -49,12 +50,6 @@ body {
     padding: 10px;
     background-color: lightgrey;
     border-radius: 10px;
-}
-
-#title {
-    text-align: center;
-    margin: 0;
-    padding: 0;
 }
 
 table,

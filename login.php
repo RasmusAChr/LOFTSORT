@@ -1,15 +1,16 @@
 <?php
     include_once 'header.php';
 ?>
-    <div id="title">
-        <h1>Login</h1>
-    <div id="main" class="col-md-12" style="background-color:red;">
+    <div id="logininnerwrap">
+        <div id="main" class="col-md-12">
 
-    <section class="login-form">
-                <form action="includes/login.inc.php" method="post">
-                    <input type="text" name="username" placeholder="Brugernavn...">
-                    <input type="password" name="password" placeholder="Kodeord...">
-                    <button type="submit" name="submit">Login</button>
+            <h1>Login</h1>
+
+            <section>
+                <form class="login-form" action="includes/login.inc.php" method="post">
+                    <input class="form-control" type="text" name="username" placeholder="Brugernavn...">
+                    <input class="form-control" type="password" name="password" placeholder="Kodeord...">
+                    <button class="btn btn-dark" type="submit" name="submit">Login</button>
                 </form>
 
                 <?php
@@ -22,8 +23,8 @@
                     }
                 }
                 ?> 
-
             </section>
+        </div>
     </div>
 <?php
     include_once 'footer.php';
