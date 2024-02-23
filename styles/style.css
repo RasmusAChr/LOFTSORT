@@ -13,7 +13,6 @@ body {
 #wrapper {
     height: fit-content;
     margin-top: 100px;
-    padding: 20px;
     width: 700px;
 }
 
@@ -46,7 +45,7 @@ body {
     margin-top: 5px;
 }
 
-#main {
+.main {
     padding: 10px;
     background-color: lightgrey;
     border-radius: 10px;

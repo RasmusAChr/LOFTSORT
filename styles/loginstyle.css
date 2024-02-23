@@ -2,25 +2,39 @@
     color: white;
     text-align: center;
     margin-bottom: 50px;
-    font-size:80px;
+    font-size: 80px;
 }
-  
+
 @media screen and (max-width: 480px) {
     #loginTitle {
         width: 100vw;
-        font-size:16vw;
-        color: red !important;
+        font-size: 16vw;
     }
-    #logininnerwrap {
-        margin: 0 0 0 0 !important; 
+
+    #login-box {
+        width: 95% !important;
+        margin: 0 auto;
     }
+
+    .login-form input {
+        margin-bottom: 5px;
+        width: 95% !important;
+    }
+
+    .login-form button {
+        padding: 0.75rem 1.25rem !important;
+    }
+
 }
 
 #logininnerwrap {
     text-align: center;
-    margin: 0 20% 0 20%;
     padding: 0;
+}
 
+#login-box {
+    width: calc(min(450px, 90%));
+    margin: 0 auto;
 }
 
 .login-form {
@@ -38,4 +52,5 @@
 
 .login-form button {
     display: block;
+    padding: 0.5rem 1rem;
 }
