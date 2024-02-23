@@ -1,3 +1,21 @@
+#loginTitle {
+    color: white;
+    text-align: center;
+    margin-bottom: 50px;
+    font-size:80px;
+}
+  
+@media screen and (max-width: 480px) {
+    #loginTitle {
+        width: 100vw;
+        font-size:16vw;
+        color: red !important;
+    }
+    #logininnerwrap {
+        margin: 0 0 0 0 !important; 
+    }
+}
+
 #logininnerwrap {
     text-align: center;
     margin: 0 20% 0 20%;

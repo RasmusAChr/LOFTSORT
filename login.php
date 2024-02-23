@@ -1,10 +1,13 @@
 <?php
     include_once 'header.php';
 ?>
+    <h1 id="loginTitle">Loft Sorter</h1>
+
     <div id="logininnerwrap">
+
         <div id="main" class="col-md-12">
 
-            <h1>Login</h1>
+            <h2>Login</h2>
 
             <section>
                 <form class="login-form" action="includes/login.inc.php" method="post">
