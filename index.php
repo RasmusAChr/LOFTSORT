@@ -5,35 +5,46 @@ include_once 'header.php';
 <div id="upper" class="container">
     <div class="row" style="margin:0;padding:0;">
         <div class="col-md-9" style="padding:0;">
-            <h1 id="title">Items</h1>
+            <h1 style="text-align:center;" id="title">Search for items</h1>
 
             <form id="searchItemForm" action="includes/searchitems.inc.php" method="post">
-                <input id="name" type="text" name="name" placeholder="name...">
-                <input id="section" type="number" name="section" placeholder="section...">
-                <input id="box" type="text" name="box" placeholder="box...">
-                <input type='submit' id="submit" name='submit' value='Udsøg'>
+                <input id="name" type="text" name="name" placeholder="name..."><br>
+                <div class="row">
+                    <div class="col-md-9"  style="padding:0; text-align:left;">
+                        <input id="box" type="text" name="box" placeholder="box...">
+                    </div>
+                    <div class="col-md-3" style="padding:0;">
+                        <input id="section" type="number" name="section" placeholder="section...">
+                    </div>
+                </div>
+            
+                <input id="submit" type='submit' name='submit' value='Udsøg'>
             </form>
 
         </div>
+
+
+        <!-- 
+            <img src='icons/logout.svg'>
+            <img src="icons/box.svg">
+            <img src="icons/addItem.svg">          
+    -->
+
         <div id="upperButtons" class="col-md-3">
-            <div class="row">
+            <div class="buttonContainer">
                 <?php
                 if (isset($_SESSION['username'])) {
-                    echo "<a id='btnMenu' href='includes/logout.inc.php'><button><img src='icons/logout.svg'></button></a>";
+                    echo "<a id='btnMenu' href='includes/logout.inc.php'><button>Logout</button></a>";
                 }
                 ?>
-                <a id="btnMenu"></a>
-                <a id="btnMenu" href="boxes.php"><button><img src="icons/box.svg"></button></a>
-                <a id="btnMenu" href="additem.php"><button><img src="icons/addItem.svg"></button></a>
+                <a id="btnMenu" href="boxes.php"><button>Boxes</button></a>
+                <a id="btnMenu" href="additem.php"><button>Add item</button></a>
             </div>
 
         </div>
     </div>
-
-
-
-
 </div>
+
 <div class="main" class="col-md-12">
 
     <script src="https://www.kryogenix.org/code/browser/sorttable/sorttable.js"></script>

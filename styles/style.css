@@ -17,6 +17,7 @@ body {
 }
 
 #upper {
+    width: 500px;
     background-color: lightgrey;
     margin-bottom: 20px;
     padding: 10px;
@@ -24,12 +25,22 @@ body {
 }
 
 #upperButtons {
-    text-align: right;
+    text-align: center;
+    padding: 20px 0 20px 0;
+    border-left: 1px solid rgb(181, 181, 181); /* Adds divider *DONT CHANGE* */
 }
 
 #upperButtons button {
-    width: auto;
-    border-radius: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.buttonContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%; /* Set a fixed height or adjust as needed */
 }
 
 #searchItemForm {
@@ -37,12 +48,26 @@ body {
     text-align: center;
 }
 
-#searchItemForm #section {
-    width: 90px;
+#searchItemForm input {
+    margin-top: 5px;
 }
 
-#searchItemForm #submit {
-    margin-top: 5px;
+#searchItemForm #name {
+    width: 90%;
+}
+
+#searchItemForm div.row {
+    width: 100%;
+    padding: 0 5% 0 5%;
+    margin: 0 !important; 
+}
+
+#searchItemForm #box {
+    width: 95%;
+}
+
+#searchItemForm #section {
+    width: 100%;
 }
 
 .main {
@@ -65,14 +90,6 @@ td {
 
 button {
     border: 1;
-}
-
-#btnMenu {
-    width: 50%;
-}
-
-#btnMenu button {
-    width: 100%;
 }
 
 #btnMenu img {
