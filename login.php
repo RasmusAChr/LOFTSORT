@@ -22,6 +22,8 @@ include_once 'header.php';
                     echo "<p>Udfyld alle felter.</p>";
                 } else if ($_GET["error"] == "wronglogin") {
                     echo "<p>Ugyldig login oplsyninger.</p>";
+                } else if ($_GET["error"] == "wrongloginusername") {
+                    echo "<p>Forkert brugernavn.</p>";
                 }
             }
             ?>
