@@ -33,6 +33,7 @@ Im using phpMyAdmin but this should be the same for the majority of SQL manageme
 
 ### Add users
 At this moment the only way to add users is to add them manually in the database.
+The program uses MD5 Hash when logging in, so make sure that your password in the database is encoded before inserting a user in the table.
 Use this query `INSERT INTO 'user' ('id', 'username', 'name', 'password') VALUES ('YOUR_ID', 'YOUR_USERNAME', 'YOUR_NAME', 'YOUR_PASSWORD');` and replace `YOUR_xxx` with what you like.
 
 ## License
