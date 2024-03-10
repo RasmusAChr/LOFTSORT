@@ -5,8 +5,9 @@ This application helps you organize all your stuff.
 - [Introduction](#introduction)
 - [Features](#features)
 - [Requirements](#requirements)
-- [How to use Client](#how-to-use-client)
-- [Server Installation](#server-installation)
+- [How to setup database](#how-to-setup-database)
+  - [Import database](#import-database)
+  - [Add users](#add-users)
 - [License](#license)
 
 ## Introduction
