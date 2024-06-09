@@ -37,4 +37,4 @@ The program uses MD5 Hash when logging in, so make sure that your password in th
 Use this query `INSERT INTO 'user' ('id', 'username', 'name', 'password') VALUES ('YOUR_ID', 'YOUR_USERNAME', 'YOUR_NAME', 'YOUR_PASSWORD');` and replace `YOUR_xxx` with what you like.
 
 ## License
-[License](./LICENSE.md)
+This project is licensed under the MIT License. See the [License](./LICENSE.md) file for more details.
